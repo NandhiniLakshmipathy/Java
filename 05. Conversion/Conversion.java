@@ -5,8 +5,8 @@ class Conversion
         byte b = 127;
         int a = b;
         // int b = a; error
-        // System.out.println(a); //127
-
+        System.out.println(a); //127
+// type casting (explicit conversion)
         int j = 257;
         //byte k = j; // error,, cannote assign a integer to byte
         byte k = (byte)j;
