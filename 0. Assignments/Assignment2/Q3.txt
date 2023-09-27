@@ -1,0 +1,18 @@
+  // 3. Take name as input and print a greeting message for that particular name.
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        int principle = in.nextInt();
+        int time = in.nextInt();
+        float rateOfInterest = in.nextFloat();
+
+        double simpleInterest = (principle * time * rateOfInterest) / 100;
+        System.out.println(simpleInterest);
+
+        in.close();
+    }
+    
+}
