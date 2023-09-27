@@ -1,0 +1,18 @@
+ // 6. Input currency in rupees and output in USD.
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter currency in rupees: ");
+        double rupees = in.nextDouble();
+
+        double USD = rupees * 0.012;
+        
+        System.out.println(USD);
+
+        in.close();
+    }
+    
+}
