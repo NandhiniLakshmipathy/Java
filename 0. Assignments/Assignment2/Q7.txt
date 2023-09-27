@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        //To calculate Fibonacci Series up to n numbers.
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = in.nextInt();
+        int a= 0;
+        int b = 1;
+        int count = 2;
+        System.out.print(a + " ");
+        System.out.print(b + " ");
+        while(count<=num)
+        {
+            int c = a + b; 
+            a = b;
+            b = c;        // 0,1,1,2
+            System.out.print(c + " ");
+            count++;
+        }
+
+        in.close();
+    }
+    
+}
