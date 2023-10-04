@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //To find Armstrong Number between two given number.
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        int ans;
+        for (int count = num1; count <= num2; count++)
+        {
+            num1 = count;
+            ans = 0;
+        while(num1!=0)
+        {
+            int rem = num1 % 10;
+            ans = ans + (rem * rem * rem);
+            num1 = num1 / 10;
+        }
+        if(ans == count)
+        {
+             System.out.println(ans);
+        }
+        }
+        in.close();
+    }
+    
+}
