@@ -4,7 +4,8 @@
 4. Define a method that returns the product of two numbers entered by user.
 5. Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.
 6. Define a method to find out if a number is prime or not.
-7. Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:
+7. Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below
+   <br/>
 <pre>
 Marks        Grade 
 91-100         AA 
