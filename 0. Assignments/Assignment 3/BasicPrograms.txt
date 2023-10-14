@@ -1,0 +1,208 @@
+1. Area Of Circle Java Program
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Area Of Circle Java Program
+        int radius = in.nextInt();
+        double areaOfCircle = Math.PI * radius * radius;
+        System.out.println(areaOfCircle);
+        
+        in.close();
+    }
+    
+}
+--------------------------------------------------------------------------------------
+2. Area Of Triangle
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Area Of Triangle
+        int base = in.nextInt();
+        int height = in.nextInt();
+
+        double areaOfTriange = (base*height)/2;
+
+        System.out.println(areaOfTriange);
+        
+        in.close();
+    }
+    
+}
+-------------------------------------------------------------------------------------
+3. Area Of Rectangle Program
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Area Of Rectangle
+        int breadth = in.nextInt();
+        int length = in.nextInt();
+
+        double areaOfRectangle = length * breadth;
+
+        System.out.println(areaOfRectangle);
+        
+        in.close();
+    }
+    
+}
+------------------------------------------------------------------------------------------------
+4. Fibonacci Series In Java Programs
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Fibonacci Series In Java Program
+        int n = in.nextInt();
+        in.close();
+        int a = 0;
+        int b = 1;
+        System.out.print(a+" "+b +" ");
+        int c;
+        for(int i = 2; i<n; i++)
+        {
+            c = a+b;
+            a = b;
+            b = c;
+            System.out.print(c+" ");  
+        }
+        
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------
+5. nth fibonacci number
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Fibonacci Series In Java Program
+        int n = in.nextInt();
+        in.close();
+        int a = 0;
+        int b = 1;
+        int c = 0;
+        if(n == 0)
+        {
+            System.out.println(a);
+        }
+        else{
+        for(int i = 2; i<=n; i++)
+        {
+            c = a+b;
+            a = b;
+            b = c; 
+        }
+        System.out.println(c);
+    }
+        
+    }
+    
+}
+-------------------------------------------------------------------------------------------------
+6.Subtract the Product and Sum of Digits of an Integer
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        in.close();
+        int sum = 0; int product = 1;
+        while(num!=0)
+        {
+            int rem = num%10;
+            sum = sum + rem;
+            product = product*rem;
+            num = num/10;
+        }
+        System.out.println(product-sum);
+        
+    }
+    
+}
+----------------------------------------------------------------------------------------------------
+7. Input a number and print all the factors of that number (use loops).
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        in.close();
+        for(int i = 1; i<=num; i++)
+        {
+            if(num%i == 0)
+            {
+                System.out.println(i);
+            }
+        }
+        
+        
+    }
+    
+}
+----------------------------------------------------------------------------------------------------------
+8. Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+       
+        int sum = 0;
+        boolean take_input = true;
+        while(take_input)
+        {
+            int n = in.nextInt();
+            sum = sum + n;
+            if(n == 0)
+            {
+               break;
+            }
+        }
+        System.out.println(sum);
+        
+     in.close();   
+    }
+    
+}
+-------------------------------------------------------------------------------------------------------------------------
+9. Take integer inputs till the user enters 0 and print the largest number from all
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Take integer inputs till the user enters 0 and print the largest number from all.
+       
+        int max = 0;
+        boolean take_input = true;
+
+        while(take_input)
+        {
+            int n = in.nextInt();
+            if(n>max)
+            {
+                max = n;
+            }
+            if(n == 0)
+            {
+               break;
+            }
+        }
+        System.out.println(max);
+        
+     in.close();   
+    }
+    
+}
+----------------------------------------------------------------------------------------------------------------------------
