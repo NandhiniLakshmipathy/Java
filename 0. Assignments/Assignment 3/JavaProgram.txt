@@ -1,0 +1,280 @@
+1. Factorial Program In Java
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Factorial Program In Java
+        int n = in.nextInt();
+        in.close(); 
+        int fact = 1;
+        if(n == 0)
+        {
+            fact = 1;
+        }else{
+        for(int i = 1;i<=n; i++) 
+        {
+            fact = fact*i;       
+        }  
+        }
+        System.out.println(fact);
+    }
+    
+}
+---------------------------------------------------------------------------------
+5. Calculate Distance Between Two Points
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //Calculate Distance Between Two Points
+        double x1 = in.nextInt();
+        double x2 = in.nextInt();
+        double y1 = in.nextInt();
+        double y2 = in.nextInt();
+        in.close(); 
+        double distance = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1,2));
+        System.out.println(distance);
+        
+    }
+    
+}
+---------------------------------------------------------------------------------------
+7. Power in java
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        // Power in java
+        double powerOfNum = Math.pow(2, 23);
+        System.out.println(powerOfNum);
+        
+        
+    }
+    
+}
+----------------------------------------------------------------------------------------
+8. Calculate Depreciation of Value
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        // Calculate Depreciation of Value v2 = v1[1-r/100]^t
+        float v1 = 200;
+        float r = 10;
+        float t= 2; 
+        float Depreciation = (float)(v1 * Math.pow((1-r/100), t)) ;  
+        System.out.println(Depreciation);
+    }
+    
+}
+-------------------------------------------------------------------------------------------------
+9. import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        // Calculate Batting Average
+        //Calculate the number of dismissals, equal to matches – notout.
+        //Calculate the Batting Average, equal to runs/ (matches – notout).
+        int matches = 120;
+        int notout = 3;
+        int runs = 1200;
+        int avg = runs/(matches-notout); 
+        System.out.println(avg);
+    }
+    
+}
+----------------------------------------------------------------------------------------------------
+13. Sum Of N Numbers
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        //Sum Of N Numbers
+        int n = 5;
+        int sum = 0;
+        for(int i = 1; i<=n; i++)
+        {
+            sum = sum + i;
+        }
+        System.out.println(sum);
+    }
+    
+}
+----------------------------------------------------------------------------------------------------
+14. Armstrong number
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = sc.nextInt();
+        sc.close();
+
+        System.out.print("Armstrong numbers in the range 1 to " + n + ": ");
+        int sumCube = 0;
+        
+        int digit = 0;
+        for (int i = 1; i <= n; i++) {
+            int temp = i;
+            while(temp>0){
+                digit++;
+                temp = temp/10;
+            }
+            temp = i;
+            while (temp != 0) {
+                int rem = temp % 10;
+                sumCube  = (int)(sumCube+Math.pow(rem, digit));
+                temp /= 10;
+            }
+
+            if (sumCube == i) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------
+16. Reverse A String In Java
+public class Demo{
+    public static void main(String[] args) {
+        //Reverse a string
+        String str = "nandhini";
+        String result = "";
+        for(int i = 0; i<str.length(); i++)
+        {
+            result = result + str.charAt(str.length()-1-i);
+        }
+        System.out.println(result);
+    }
+}
+--------------------------------------------------------------------------------------------
+17. Find if a number is palindrome or not
+public class Demo{
+    public static void main(String[] args) {
+        //Find if a number is palindrome or not
+        int n = 120;
+        int revNum = 0;
+        int temp = n;
+        while(temp>0)
+        {
+            int rem = temp%10;
+            revNum = revNum*10+rem;
+            temp = temp/10;
+        }
+        System.out.println(revNum);
+        if(revNum == n)
+        {
+            System.out.println("The give number is palindrome");
+        }
+        else{
+            System.out.println("The give number is not palindrome");
+        }
+        
+    }
+}
+-----------------------------------------------------------------------------------------
+23. Check Leap Year Or Not
+public class Demo{
+    public static void main(String[] args) {
+        //Check Leap Year Or Not
+        int year = 2020;
+        
+            if(year%4 == 0)
+            {
+                if(year%100 == 0)
+                {
+                    if(year%400 ==0)
+                    {
+                        System.out.println("leap");
+                    }
+                    else{
+                        System.out.println("not leap");
+                    }
+                }
+                else
+                {
+                    System.out.println("Leap year");
+                }
+            }
+            else
+            {
+                System.out.println("Not leap");
+            }
+        }
+        
+        
+    }
+// if(year%400 == 0 || year%4 == 0  && year%100!=0)  ==> leap
+------------------------------------------------------------------------------------------
+22. Perfect Number In Java
+A number whose sum of factors (excluding the number itself) is equal to the number is called a perfect number
+public class Demo{
+    public static void main(String[] args) {
+        //Perfect Number In Java
+        int n = 280;
+        int sum = 0;
+        for(int i = 1; i<n; i++)
+        {
+            if(n % i == 0)
+            {
+                sum+=i;
+            }
+        }
+        if(sum == n)
+        {
+            System.out.println("perfect number");
+        } 
+        else{
+            System.out.println("Not a perfect number");
+        }    
+        }
+        
+        
+    }
+--------------------------------------------------------------------------------------
+20. LCM Of Two Numbers
+public class Demo{
+    public static void main(String[] args) {
+        //LCM In Java
+        //The LCM of two integers is the smallest positive integer that is perfectly divisible by both the numbers (without a remainder).
+        int n1 = 72;
+        int n2 = 120;
+        int lcm = n1>n2 ? n1 : n2;
+        while(true)
+        {
+            if(lcm%n1 == 0 && lcm%n2 == 0)
+            {
+                System.out.println(lcm);
+                break;
+            }
+            lcm++;
+        }
+          
+        }  
+    }
+--------------------------------------------------------------------------------------------
+21.HCF/GCD
+public class Demo{
+    public static void main(String[] args) {
+        //HCF In Java
+        //GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of two numbers is the largest number that divides both of them. 
+        int n1 = 72;
+        int n2 = 120;
+        int GCD = n1<n2 ? n1 : n2;
+        while(GCD>0)
+        {
+            if(n1%GCD == 0 && n2%GCD == 0)
+            {
+                System.out.println(GCD);
+                break;
+            }
+            GCD--;
+        }
+          
+        }  
+    }
+--------------------------------------------------------------------------------------
+
